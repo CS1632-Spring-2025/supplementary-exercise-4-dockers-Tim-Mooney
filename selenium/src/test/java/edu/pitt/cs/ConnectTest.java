@@ -178,7 +178,7 @@ public class ConnectTest {
   }
   @Test
   public void tEST11GREETACATWITHNAME() {
-    driver.get("http://localhost:8080greet-a-cat/Jennyanydots");
+    driver.get("http://localhost:8080/greet-a-cat/Jennyanydots");
     js.executeScript("document.cookie = \"1=false\";document.cookie = \"2=false\";document.cookie = \"3=false\";");
     driver.manage().window().setSize(new Dimension(812, 812));
     vars.put("meows", driver.findElement(By.cssSelector("#greeting > h4")).getText());
